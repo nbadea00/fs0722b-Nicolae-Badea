@@ -70,7 +70,7 @@ figure.center.margin0 video.block{
     border-left: 2px solid rgb(255,216,119);
     padding-left: 10px;
 }
-#featured > p{
+#featured + p{
     color: #b5460f;
     font-weight: bolder;
 }
