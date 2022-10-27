@@ -81,10 +81,12 @@ main{
     color: lightgrey;
     font-size: 0.9em;
 }
-
 .section{
     text-align: left;
     max-width: 600px;
+}
+.section span{
+    color: #aa2072
 }
 .section a{
     color: #01aacd;
@@ -154,6 +156,10 @@ main{
     text-align: center;
     font-size: 1.3em;
     font-weight: 900;
+}
+form{
+    display: flex;
+    justify-content: center;
 }
 form input{
     border: none;
