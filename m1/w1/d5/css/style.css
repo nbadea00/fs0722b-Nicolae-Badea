@@ -1,0 +1,360 @@
+/* Your styles here */
+/*
+    Opzioni generali
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300;400&display=swap');
+
+body{
+    color: #393d41;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65;
+}
+
+.margin-top{
+    margin-top: 25px;
+}
+.margin-bot{
+    margin-bottom: 25px;
+}
+
+.txt-center{
+    text-align: center;
+}
+
+.padd{
+    padding: 15px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+img{
+    width: 80%;
+}
+.circle{
+    border-radius: 100%;
+    max-width: 300px;
+}
+
+/*
+    Inizio Header
+*/
+
+header{
+    background-color: black;
+    align-items: center;
+    padding:20px;
+    text-align: center;
+}
+
+#logo{
+    width: 140px; 
+}
+
+/*
+    Fine Header
+*/
+
+/*
+    Inizio Main
+*/
+
+/*
+    inizio prima sezione
+*/
+
+#first-sec{
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+.title{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+h1.title{
+    font-size: 1.5em;
+}
+
+#button{
+    background-color: #f04c2f;
+    color:white;
+    font-family: 'Monstserrat';
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+}
+
+/*
+    fine prima sezine
+*/
+
+/*
+    inizio sezione ceo
+*/
+
+.ceo{
+    background-color: #e22d0e;
+    color: white;
+    padding: 15px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.ceo h2{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    font-size: 1.6em;
+}
+.cor{
+    font-style: oblique;
+}
+
+/*
+    fine sezine ceo
+*/
+
+/*
+    Fine Main
+*/
+
+/*
+    Inizio Aside
+*/
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+aside article{
+    border: 1px solid #dee1e3;
+    max-width: 350px;
+}
+.art{
+    overflow: hidden;
+}
+.art a{
+    text-decoration: none;
+    color:#393d41;
+}
+.art img{
+    width: 100%;
+    transform: scale(1.1);
+}
+
+/*
+    Fine Aside
+*/
+
+/*
+    Inizio Footer
+*/
+
+footer{
+    background-color: #25a2c3;
+    color: white;
+}
+.contact h2{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    font-size: 1.6em;
+}
+.contact a{
+    color: white;
+}
+.sep{
+    border-top: 1px solid white;
+    padding-top: 30px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+    Fine Footer
+*/
+/*
+
+*/
+@media screen and (min-width: 319px) {
+
+    /*
+        cerchio al centro del testo
+    */
+
+    .circle2{
+        border-radius: 100%;
+        max-width: 300px;
+    }
+
+    /*
+        cerchio sopra testo
+    */
+
+    .circle{
+        display: none;
+    }
+
+    #logo{
+        width: 130px;
+    }
+}
+
+@media screen and (min-width:424px) {
+    body{
+        font-size: 1.2rem;
+    }
+    .margin-bot{
+        margin-bottom: 15px;
+    }
+    .margin-top{
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width:767px) {
+    .margin-bot{
+        margin-bottom: 12px;
+    }
+    .margin-top{
+        margin-top: 12px;
+    }
+
+    .circle{
+        display: none;
+    }
+    .circle2{
+        border-radius: 100%;
+        max-width: 300px;
+    }
+
+    header{
+        text-align: left;
+    }
+    #logo{
+        width: 140px;
+    }
+
+}
+
+@media screen and (min-width: 1023px ) {
+    body{
+        font-size: 1em;
+    }
+
+    .margin-bot{
+        margin-bottom: 15px;
+    }
+    .margin-top{
+        margin-top: 15px;
+    }
+
+    .circle{
+        display: inline;
+        max-width: 330px;
+    }
+    .circle2{
+        display: none;
+    }
+
+    #logo{
+        width: 150px;
+    }
+
+    #first-sec{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    aside{
+        flex-direction: row;
+        justify-content:space-evenly;
+    }
+    .art{
+        margin: 0px;
+        max-width: 300px;
+    }
+
+    #secon-sec{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #secon-sec div{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 4%;
+        max-width: 60%;
+    }
+}
+
+@media screen and (min-width: 1439px) {
+    .circle{
+        display: inline;
+        max-width: 480px;
+    }
+    .circle2{
+        display: none;
+    }
+
+    #first-sec{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    #secon-sec{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #secon-sec div{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5%;
+        max-width: 50%;
+    }
+
+    .art{
+        margin: 0px;
+        max-width: 400px;
+    }
+    
+}
+
+@media screen and (min-width: 1919px) {
+    body{
+        font-size: 1.5em;
+    }
+
+    .circle{
+        max-width: 500px;
+    }
+
+    #logo{
+        width: 200px;
+    }
+
+    #first-sec{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    
+    .art{
+        margin: 0px;
+        max-width: 500px;
+    }
+}
