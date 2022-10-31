@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="descriptio" content="Descrizione del index">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Index</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="img/logo.png" alt="logo">
+        <h2>
+            Gli amici degli animali
+        </h2>
+    </header>
+
+    <nav>
+        <ul id="menu">
+            <li>
+                <a class="option" href="home.html" title="paggina home">
+                    <p>
+                        Home
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a class="option" href="index.html" title="paggina js">
+                    <p>
+                        Animali
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a class="option" href="singup.html" title="paggina per la registrazione">
+                    <p>
+                        Singup
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a class="option" href="login.html" title="paggina di login">
+                    <p>
+                        Login
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <label for="animali">Scegli un animale:</label>
+            <select class="margin-bot" name="animals" id="animals">
+                    <option value="none">
+                        --------
+                    </option>
+                    <option value="orso">
+                        Orso
+                    </option>
+                    <option value="panda">
+                        Panda
+                    </option>
+                    <option value="gallina">
+                        Gallina
+                    </option>
+            </select>
+            <input class="margin-top" id="submit" type="button" title="submit" onclick="Animol()" value="Invia!">
+
+
+            <!--script-->
+
+            <script>
+                function Animol(){
+                    var animale = document.getElementById("animals").value;
+                    console.log(animale);
+                    switch(animale){
+                        case 'orso':
+                            var anim = document.getElementById('answer');
+
+                            anim.setAttribute("style","background-image: url(img/orso.jpg);background-repeat: no-repeat; height: 300px;background-position: center;")
+
+                            document.getElementById('answer').innerHTML = ' ';
+
+                            break;
+                        case 'panda':
+                            var anim = document.getElementById('answer');
+
+                            anim.setAttribute("style","background-image: url(img/panda.jpg);background-repeat: no-repeat; height: 300px;background-position: center;")
+
+                            document.getElementById('answer').innerHTML = ' ';
+
+                            break;
+                        case 'gallina':
+                            var anim = document.getElementById('answer');
+
+                            anim.setAttribute("style","background-image: url(img/gallina.jpg);background-repeat: no-repeat; height: 300px;background-position: center;")
+
+                            alert("Potevi scegliere di meglio")
+
+                            document.getElementById('answer').innerHTML = ' ';
+
+                            break;
+
+                        default:
+                            var anim = document.getElementById('answer');
+                            document.getElementById('answer').innerHTML = 'Nessun animale trovato';
+                            anim.setAttribute("style","height: auto;")
+                            break;
+                    }
+                }
+
+            </script>
+
+            <!--fine script-->
+        
+        <div id="answer" class="margin-top"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h2 class="margin-bot">
+            Contatti
+        </h2>
+        <address>
+            <p class="p-font margin-bot">
+                <a href="mailto:io@email.com" title="email">
+                    E-mail:io@email.com
+                </a>
+            </p>
+            <p class="p-font margin-bot margin-top">
+                <a href="tel:+391111111111" title="numero di telefono">
+                    Tel: (+39)1111111111
+                </a>
+            </p>
+            <p class="p-font margin-bot">
+                Sede:
+            </p>
+        </address>
+        <p id="copy" class="p-font">
+            &copy;2022 by Refsnes Data.
+        </p>
+    </footer>
+    
+</body>
+</html>

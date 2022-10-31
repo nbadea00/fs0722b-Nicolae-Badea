@@ -1,0 +1,136 @@
+/*
+    Font
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400&display=swap');
+
+/*
+    Generali
+*/
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+img{
+    width: 80%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.p-font{
+    font-size: 0.8em;
+}
+.margin-top{
+    margin-top: 10px;
+}
+.margin-bot{
+    margin-bottom: 10px;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+/*
+    inzio header
+*/
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    
+}
+#logo{
+    width: 100px;
+}
+.option{
+    color: white;
+}
+/*
+    fine header
+*/
+/*
+    inizio nav
+*/
+
+nav{
+    background-color: grey;
+    padding: 10px;
+    border: 1px solid white;
+}
+#menu{
+    list-style-type: none;
+    display: flex;
+    justify-content:space-evenly;
+    font-size: 0.9em;
+}
+
+/*
+    fine nav
+*/
+
+/*
+    inizio main
+*/
+
+section{
+    padding: 10px;
+    font-size: 0.9em;
+    text-align: center;
+}
+#animals{
+    width: 100px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+#submit{
+    width: 100px;
+    height: 30px;
+    font-size: 0.9em;
+}
+
+.bord-bot{
+    border: none;
+    border-bottom: 1px solid black;
+}
+#singup{
+    border: 4px solid black;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+    fine main
+*/
+
+/*
+    inizio footer
+*/
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer h2{
+    font-size: 1.2em;
+}
+
+#copy{
+    padding-top: 20px;
+    border-top: 1px solid white;
+    max-width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
