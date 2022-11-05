@@ -187,7 +187,7 @@ for( let i of starWarsCharacters){
 */
 
 while (j < starWarsCharacters.length) {
-  somm += parseInt(starWarsCharacters[j].mass);
+  somm += Number(starWarsCharacters[j].mass);
   j++;
 }
 console.log(somm)

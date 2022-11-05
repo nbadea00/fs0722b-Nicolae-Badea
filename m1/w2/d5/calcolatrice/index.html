@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="calcolatrice scientifica base usabile oline">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Calcolatrice scientifica base</title>
+</head>
+
+<body>
+
+    <header>
+        <p id="legenda">
+            π = 3.1|
+            ⅇ = 2.7|
+            EXP = esponenziale(base 10)|
+            ^= esegue l'elevazione a potenza(es. 2^3 = 8)|
+            Ans = restituisce il risultato precedente|
+            DEL = elimina il carattere precedente|
+            CA = eliminare tutta l'operazione|
+        </p>
+    </header>
+
+    <div id="esterno">
+
+        <div id="monitor">
+            <input type="text" id="schermo">
+        </div>
+
+        <div id="pad">
+            <button value="cos(" class="puls" onclick="comando(this)">cos</button>
+            <button value="sin(" class="puls" onclick="comando(this)">sin</button>
+            <button value="tan(" class="puls" onclick="comando(this)">tan</button>
+            <button value="!" class="puls" onclick="comando(this)">x!</button>
+            <button value="log(" class="puls" onclick="comando(this)">log</button>
+            <input type="button" class="puls" onclick="comando(this)" value="(">
+            <input type="button" class="puls" onclick="comando(this)" value=")">
+            <input type="button" class="puls" onclick="comando(this)" value="ⅇ">
+            <input type="button" class="puls" onclick="comando(this)" value="π">
+            <input type="button" class="puls" onclick="comando(this)" value="^">
+            <input type="button" class="puls" onclick="comando(this)" value="7">
+            <input type="button" class="puls" onclick="comando(this)" value="8">
+            <input type="button" class="puls" onclick="comando(this)" value="9">
+            <input type="button" class="puls" onclick="comando(this)" value="DEL">
+            <input type="button" class="puls" onclick="comando(this)" value="CA">
+            <input type="button" class="puls" onclick="comando(this)" value="4">
+            <input type="button" class="puls" onclick="comando(this)" value="5">
+            <input type="button" class="puls" onclick="comando(this)" value="6">
+            <input type="button" class="puls" onclick="comando(this)" value="x">
+            <input type="button" class="puls" onclick="comando(this)" value="÷">
+            <input type="button" class="puls" onclick="comando(this)" value="1">
+            <input type="button" class="puls" onclick="comando(this)" value="2">
+            <input type="button" class="puls" onclick="comando(this)" value="3">
+            <input type="button" class="puls" onclick="comando(this)" value="+">
+            <input type="button" class="puls" onclick="comando(this)" value="-">
+            <input type="button" class="puls" onclick="comando(this)" value="0">
+            <input type="button" class="puls" onclick="comando(this)" value=".">
+            <input type="button" class="puls" onclick="comando(this)" value="EXP">
+            <input type="button" class="puls" onclick="comando(this)" value="Ans">
+            <input type="button" class="puls" onclick="comando(this)" value="=">
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="script/script.js"></script>
+</body>
+
+</html>

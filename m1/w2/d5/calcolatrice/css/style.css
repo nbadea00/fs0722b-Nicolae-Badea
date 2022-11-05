@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+body{
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(0, #d2e3eb 0, #d0dde1 10%, #ced6d8 20%, #cdcece 30%, #cbc5c4 40%, #c9bbbb 50%, #c7b1b3 60%, #c4a8ad 70%, #c0a0a9 80%, #bd99a6 90%, #b893a5 100%);
+}
+header{
+    border-bottom: 4px solid black;
+    margin-bottom: 5px;
+    background-image: linear-gradient(180deg, #6c482a 0, #6b4126 10%, #6b3922 20%, #69301e 30%, #67261b 40%, #641919 50%, #610718 60%, #5d0018 70%, #59001a 80%, #55001d 90%, #500021 100%);
+}
+#legenda{
+    padding: 10px;
+    color: white;
+}
+#esterno{
+    max-width: 300px;
+    border: 3px solid white;
+    border-radius: 15px;
+    background-image: linear-gradient(180deg, #462219 0, #441d16 16.67%, #421713 33.33%, #401010 50%, #3e080d 66.67%, #3b010a 83.33%, #390008 100%);;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+#monitor{
+    height: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+#schermo{
+    width: 100%;
+    background-color: gray;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+#pad{
+    border: 2px solid white;
+    border-radius: 12px;
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+}
+#grilia{
+    vertical-align: middle;
+    text-align: center;
+    
+}
+#grilia tr td{
+    padding: 10px;
+}
+.puls{
+    background-image: linear-gradient(290deg, #7a8d96 0, #78888d 10%, #778184 20%, #757a7b 30%, #747272 40%, #726969 50%, #706062 60%, #6d585c 70%, #6a5158 80%, #674a55 90%, #634554 100%);
+    color: white;
+    width: 50px;
+    height: 40px;
+    font-size: 1.1em;
+}
