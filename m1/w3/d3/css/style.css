@@ -1,0 +1,138 @@
+/* font inportato da google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+body{
+    background-image: radial-gradient(circle, #d98203, #c36408, #aa460b, #902a0c, #740909);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+    stile per il contenitore della todolist
+*/
+#todo{
+    border: 2px solid black;
+    width: 40%;
+    padding: 20px;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 25px ;
+    background-image: linear-gradient(to bottom, #8d2c0d, #b95862, #cf90aa, #dec9df, #ffffff);
+}
+/*
+    stile per il div che contiene il button è il campo di testo
+*/
+#inser-bar{
+    display: flex;
+    justify-content: space-between;
+    background-image: radial-gradient(circle, #d98203, #c36408, #aa460b, #902a0c, #740909);
+    border-radius: 15px;
+    padding: 10px;
+}
+/*
+    Campo per inserire le task
+*/
+#inser-input{
+    border: none;
+    padding: 10px;
+    width: 60%;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    background:none;
+    border-radius: 15px;
+}
+#inser-input:focus{
+    background: blue;
+}
+/*
+    gestione compatibilita per la colorazione del placeholder
+*/
+#inser-input:-ms-input-placeholder {/*WebKit browsers (Safari, Google Chrome, Opera 15+)*/
+    color: white;
+}
+#inser-input::-webkit-input-placeholder{/* Mozilla Firefox 4 to 18 */
+    color: white;
+}
+#inser-input::-moz-placeholder{ /* Mozilla Firefox 19+ */
+    color: white;
+}
+#inser-input:-moz-placeholder{/* Internet Explorer 10+ */
+    color: white;
+}
+/*
+    gestione css della grafica in focus del elemento di input necessario al inserimento delle tasc
+*/
+#inser-input:focus{
+    border: none;
+    background-color: white;
+    color: black;
+}
+#inser-input:focus:-ms-input-placeholder {
+    color: black;
+}
+#inser-input:focus::-webkit-input-placeholder{
+    color: black;
+}
+#inser-input::-moz-placeholder{
+    color: black;
+}
+#inser-input:-moz-placeholder{
+    color: black;
+}
+
+/*
+    pulsante per confermare la task da inserire
+*/
+#puls{
+    font-size: inherit;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    font-family: inherit;
+}
+#puls:hover{
+    background-color: white;
+    color: black;
+}
+
+/*
+    classe per lo stile dei box delle task
+*/
+.box{
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    font-size: inherit;
+    margin-top: 20px;
+}
+/*
+    stile del campo di testo delle task
+*/
+.box span{
+    font-family: inherit;
+    padding: 10px;
+    color: black;
+}
+/*
+    pulsante per eliminare la task
+*/
+.del-puls{
+    border: none;
+    border-radius: 100%;
+    background-color: black;
+    color: white;
+}
+.del-puls:hover{
+    background-color: red;
+}
+
+
+.del-puls i{
+    margin: 10px;
+}
