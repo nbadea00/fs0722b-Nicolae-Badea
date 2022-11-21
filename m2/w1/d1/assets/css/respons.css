@@ -1,0 +1,272 @@
+@media only screen and (min-width: 576px){ /*Schermi con larghezza minore di 576px*/
+    body{
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+
+    /*
+        Header
+    */
+    header nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /*
+        Main
+    */
+    main article h1{
+        font-size: 4.5rem;
+    }
+
+    /*
+        Form
+    */
+    input {
+        font-size: inherit;
+        line-height: inherit;
+        width: 200px;
+        padding: 5px;
+    }
+    button {
+        font-size: inherit;
+        padding: 4px 7px;
+        line-height: inherit;
+        border: 0;
+    }
+
+    /*
+        Footer
+    */
+    footer{
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (min-width: 768px){/*Schermi con larghezza minore di 768px*/
+    body{
+        font-size: 2rem;
+    }
+
+    /*
+        Main
+    */
+    main article h1{
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+    main article div{
+        width: 80px;
+        height: 80px;
+    }
+
+    /*
+        Tabella
+    */
+    table{
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    th, td {
+        padding: 12px 30px;
+    }
+
+    /*
+        Form
+    */
+    input {
+        font-size: inherit;
+        line-height: inherit;
+        width: 500px;
+        padding: 5px;
+    }
+    button {
+        font-size: inherit;
+        padding: 4px 7px;
+        line-height: inherit;
+        border: 0;
+    }
+
+    /*
+        Footer
+    */
+    footer{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1200px){/*Schermi con larghezza minore di 1200px*/
+    body{
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size: 2rem;
+    }
+
+    /*
+        Header
+    */
+    header{
+        display: flex;   
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px;
+    } 
+    header div {
+        display: flex;
+        align-items: center;
+        width: auto;
+    }
+    header div img, header div p{
+        margin-bottom: 0px;
+        width: 150px;
+    }
+    header div p {
+        padding-left: 15px ;
+        width: auto;
+    }
+
+    /*
+        Main
+    */
+    main article h1{
+        font-size: 5rem;
+    }
+
+     /*
+        Tabella
+    */
+    th, td {
+        padding: 12px 60px;
+    }
+
+    /*
+        Video
+    */
+    iframe{
+        float: left;
+        width: 50%;
+        height: 215px;
+    }
+
+    /*
+        Form
+    */
+    main article section{
+        display: inline-block;
+        width: 49%;
+        border-radius: 20px;
+    }
+    input {
+        width: 250px;
+    }
+
+    /*
+        Contenuti secondari
+    */
+    aside{
+        clear: both;
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    aside h2{
+        display: block;
+        margin-left: 45%;
+        margin-right: 45%;
+    }
+    aside div{
+        width: 33.33%;
+        margin-bottom: 0;
+    }
+
+    /*
+        Footer
+    */
+    footer address{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 780px;
+    }
+}
+
+@media print {
+    body{
+        background-image: none;
+    }
+    /*
+        Header
+    */
+    header{
+        background-image: none;
+        border: none;
+        box-shadow: none;
+        padding: 0px;
+    }
+    header ul, header div img, main div,aside,footer, iframe, article section {
+        display: none;
+    }
+    header div p{
+        color: black;
+        font-size: 2.2rem;
+    }
+
+    /*
+        Main
+    */
+    main{
+        border: none;
+        box-shadow: none;
+        padding: 0px;
+    }
+    code{
+        background: none;
+        border: none;
+    }
+    strong{
+        color: black;
+    }
+    p a {
+        color: red;
+    }
+    .img{
+        display: none;
+    }
+
+
+    /*
+        Tabella
+    */
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: separate;
+    }
+    caption {
+        font-weight: bold;
+        font-style: italic;
+    }
+    thead tr {
+        background: none;
+        color: black;
+    }
+    tbody tr {
+        border: none;
+        background: none;
+    }
+    tbody tr:nth-of-type(even) {
+        background: none;
+    }
+    thead tr th:last-of-type{
+        display: none;
+    }
+    tbody tr td:last-of-type{
+        display: none;
+    }
+    th,td{
+        padding: auto auto;
+        border: 1px solid black;  
+    }
+}
