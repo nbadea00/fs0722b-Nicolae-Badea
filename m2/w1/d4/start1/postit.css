@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Indie Flower', sans-serif;
+    font-size: 2rem;
+}
+
+#bg {
+    background-color: gray;
+    width: 1024px;
+    height: 526px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    gap: 4px;
+    
+}
+
+#bg div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 210px;
+    height: 160px;
+
+    line-height: 3rem;
+
+    box-shadow: 2px 2px 10px black;
+
+    opacity: 0%;
+    z-index: 0;
+}
+
+#bg div span h2 {
+    font-weight: bold;
+}
+
+#bg div p {
+    font-size: 1.5rem;
+}
+
+/*
+    colore di sfondo per i blocchi
+*/
+#bg div:nth-child(odd) {
+    background: linear-gradient(0deg, rgba(189, 189, 163, 1) 10%, rgba(241, 242, 189, 1) 30%, rgba(253, 253, 203, 1) 90%);
+    transform: rotate(-10grad);
+}
+
+#bg div:nth-child(even) {
+    background: linear-gradient(0deg, rgba(161, 183, 161, 1) 10%, rgba(187, 225, 188, 1) 37%, rgba(202, 252, 203, 1) 90%);
+    transform: rotate(10grad);
+}
+
+#bg div:nth-child(3n) {
+    background: linear-gradient(0deg, rgba(157, 157, 176, 1) 10%, rgba(183, 182, 215, 1) 37%, rgba(201, 201, 247, 1) 90%);
+    transform: rotate(-10grad);
+}
+
+/*
+    Animazione di caduta
+*/
+#bg div:nth-child(3n){
+    animation: caduta 4s ease 4s forwards;
+}
+#bg div:nth-child(1),#bg div:nth-child(4),#bg div:nth-child(7){
+    animation: caduta 4s ease 2s forwards;
+}
+#bg div:nth-child(2),#bg div:nth-child(5),#bg div:nth-child(8){
+    animation: caduta 4s ease forwards;
+}
+
+/*
+    Hover per solevare un blocco
+*/
+#bg div:hover {
+    transform: rotate(0grad);
+    z-index: 10;
+    box-shadow: 8px 8px 10px black;
+    transform: scale(1.3, 1.3);
+}
+
+@keyframes caduta {
+    0% {
+        transform: scale(1.9,1.9) rotate(0grad);
+        opacity: 100%;
+        z-index: 10;
+    }
+
+    100% {
+        transform: scale(auto,auto) rotate(auto);
+        opacity: 100%;
+    }
+}

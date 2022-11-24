@@ -1,0 +1,81 @@
+/*
+1 creazione del testo e formattazione di 1 parola da far ruotare
+2 inserimento delle altre 2 parole
+3 sovrapporre le 3 parole
+4 mostrare 1 parola e nascondere le altre 2
+5 animare 1 parola (fadein - fadeout con spostamento)
+6 animare le altre 2 parole
+7 ritardare progressivamente l'animazione delle altre 2 parole 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#testoAlternato {
+    border: 1px solid black;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-family: 'Indie Flower', sans-serif;
+    padding: 10px;
+
+}
+
+.parole {
+    display: inline-block;
+    color: #6c889c;
+    position: relative;
+    width: 160px;
+    height: 1.5rem;
+}
+
+#p-1 {
+    position: absolute;
+    width: 150px;
+    animation: scompare 6s ease infinite;
+}
+
+#p-2 {
+    position: absolute;
+    width: 180px;
+    opacity: 0%;
+    animation: scompare 6s ease infinite 2s;
+}
+
+#p-3 {
+    position: absolute;
+    width: 150px;
+    opacity: 0;
+    animation: scompare 6s ease infinite 4s;
+}
+
+
+/*
+    animazione per far alternare le parole
+*/
+@keyframes scompare {
+    0% {
+        top: -5px;
+        opacity: 0%;
+    }
+    30%{
+        top:0px;
+        opacity: 0%;
+    }
+    50%{
+        top: 5px;
+        opacity: 100%;
+    }
+    70%{
+        top:10px;
+        opacity: 0%;
+    }
+    100%{
+        top:15px;
+        opacity: 0%;
+    }
+}

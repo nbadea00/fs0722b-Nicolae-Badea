@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Esempio di lavagna con Post It</title>
+<meta name="description" content="Creazione di una lavagna con post animati al rollover">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="postit.css">
+</head>
+
+<body>
+    <div id="bg">
+
+    </div>
+
+    <script>
+
+        //serve solo per scrivere l'html(gli 8 blocchi e le scritte dentro)
+        let conteiner = document.querySelector('#bg');
+        let arr = ['Creare i post', 'Colorarli', 'Affiancarli', 'Spazziarli', 'Ombreggiarli', 'Ruotarli', 'Animarli', 'Testarli'];
+
+        for(let i = 0 ; i < 8 ; i++){
+
+            let div = document.createElement('div');
+            let cont = document.createElement('span');
+            let h2 = document.createElement('h2');
+            let p = document.createElement('p');
+
+            p.textContent = arr[i];
+            h2.textContent = `Task #${i+1}`;
+
+            cont.append(h2);
+            cont.append(p);
+
+            div.append(cont);
+
+            conteiner.append(div);
+
+        }
+        
+    </script>
+</body>
+</html>
