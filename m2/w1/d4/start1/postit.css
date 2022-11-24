@@ -52,17 +52,17 @@ body {
 */
 #bg div:nth-child(odd) {
     background: linear-gradient(0deg, rgba(189, 189, 163, 1) 10%, rgba(241, 242, 189, 1) 30%, rgba(253, 253, 203, 1) 90%);
-    transform: rotate(-10grad);
+    rotate:-10grad;
 }
 
 #bg div:nth-child(even) {
     background: linear-gradient(0deg, rgba(161, 183, 161, 1) 10%, rgba(187, 225, 188, 1) 37%, rgba(202, 252, 203, 1) 90%);
-    transform: rotate(10grad);
+    rotate: 10grad;
 }
 
 #bg div:nth-child(3n) {
     background: linear-gradient(0deg, rgba(157, 157, 176, 1) 10%, rgba(183, 182, 215, 1) 37%, rgba(201, 201, 247, 1) 90%);
-    transform: rotate(-10grad);
+    rotate:-10grad;
 }
 
 /*
@@ -82,16 +82,17 @@ body {
     Hover per solevare un blocco
 */
 #bg div:hover {
-    transform: rotate(0grad);
+    rotate:0grad;
     z-index: 10;
     box-shadow: 8px 8px 10px black;
     transform: scale(1.3, 1.3);
+    transition: rotate 0.5s;
 }
 
 @keyframes caduta {
     0% {
         transform: scale(1.9,1.9) rotate(0grad);
-        opacity: 100%;
+        opacity: 0%;
         z-index: 10;
     }
 
