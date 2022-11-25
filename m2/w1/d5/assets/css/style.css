@@ -379,7 +379,8 @@ aside {
     }
 
     .menu {
-        width: 70%;
+        width: 50%;
+        justify-content: space-evenly;
     }
 
     .menu li:nth-child(1n) {
@@ -512,11 +513,12 @@ aside {
         Header
     */
     nav {
-        padding: 20px 20px;
+        padding: 20px 5px;
     }
 
     .menu {
-        width: 40%;
+        width: 50%;
+        justify-content: space-evenly;
     }
 
     .menu li:nth-child(1n) {
@@ -588,12 +590,15 @@ aside {
 
     /*
     Articoli secondari
-*/
+    */
 
 
     .side-content {
         width: 100%;
         font-size: 12px;
+    }
+    .side-content article {
+        flex-direction: column;
     }
 
     .side-content article>img {
