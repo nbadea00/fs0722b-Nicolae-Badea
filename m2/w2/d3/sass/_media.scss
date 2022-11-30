@@ -1,0 +1,140 @@
+@import "button";
+
+@media screen and (min-width:600px) {
+    header {
+        nav {
+            .menu {
+                flex-direction: row;
+            }
+        }
+
+        .banner {
+            background-image: none;
+            background-color: gray;
+            display: flex;
+
+            &-text {
+                width: 50%;
+                &-subtitle{
+                    color: $color-black;
+                }
+            }
+
+            &-img {
+                display: block;
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    header {
+        nav{
+            padding: 10px $padding*10;
+            .menu{
+                gap:15px;
+            }
+        }
+        .banner {
+            &-text {
+                width: 60%;
+
+
+                &-title {
+                    padding: $padding*2;
+                    font-size: $font-size*7;
+                    color: $color-white;
+                }
+
+                &-subtitle {
+                    padding: $padding*2;
+                    font-size: $font-size*4;
+                }
+
+                &-description {
+                    font-size: $font-size*1;
+                    padding: $padding*4;
+                }
+
+                &-puls {
+                    &-button {
+                        padding: $padding*2 $padding*3;
+                        font-size: calc($font-size*2);
+                    }
+
+                }
+            }
+
+            &-img {
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    header {
+        nav{
+            padding: 10px $padding*20;
+            .menu{
+                font-size: $font-size*2.5;
+                gap:20px;
+            }
+        }
+
+        .banner {
+            &-text {
+                width: 65%;
+                &-puls {
+                    &-button {
+                        padding: $padding*2 $padding*3;
+                        font-size: calc($font-size*2.5);
+                    }
+
+                }
+            }
+
+            &-img {
+                width: 35%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1820px) {
+    header {
+        .banner {
+            &-text {
+                width: 70%;
+
+                &-title {
+                    padding: $padding*4;
+                    font-size: $font-size*8;
+                    color: $color-white;
+                }
+
+                &-subtitle {
+                    padding: $padding*4;
+                    font-size: $font-size*4;
+                }
+
+                &-description {
+                    font-size: $font-size*3;
+                    padding: $padding*4;
+                }
+
+                &-puls {
+                    &-button {
+                        padding: $padding*3 $padding*5;
+                        font-size: calc($font-size*5/2);
+                    }
+                }
+            }
+
+            &-img {
+                width: 30%;
+            }
+        }
+    }
+}

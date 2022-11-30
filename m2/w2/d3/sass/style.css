@@ -1,0 +1,200 @@
+header .banner-text-puls {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 0%;
+}
+header .banner-text-puls-button {
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  color: black;
+  margin-bottom: 5px;
+}
+header .banner-text-puls-button:nth-of-type(1):hover {
+  transform: scale(1.1, 1.1);
+  background-color: gold;
+  color: black;
+  transition: all 0.5s;
+}
+header .banner-text-puls-button:nth-of-type(2):hover {
+  transform: scale(1.1, 1.1);
+  background-color: black;
+  color: white;
+  transition: all 0.5s;
+}
+
+header {
+  box-sizing: border-box;
+}
+header nav {
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
+}
+header nav .logo img {
+  width: 80px;
+}
+header nav .menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  font-size: 20px;
+}
+header nav .menu-elements:hover {
+  text-decoration: underline;
+}
+header .banner {
+  background-image: url("../assets/img/teatro.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 50px 30px;
+  text-align: center;
+}
+header .banner-text {
+  color: white;
+}
+header .banner-text-title {
+  padding: 5px;
+  font-size: 60px;
+  color: white;
+}
+header .banner-text-subtitle {
+  padding: 5px;
+  font-size: 30px;
+}
+header .banner-text-description {
+  font-size: 20px;
+  padding: 5px;
+}
+header .banner-img {
+  display: none;
+}
+header .banner-img:hover {
+  transform: scale(0.9, 0.9);
+  transition: all 0.5s;
+}
+
+header .banner-text-puls {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 0%;
+}
+header .banner-text-puls-button {
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  color: black;
+  margin-bottom: 5px;
+}
+header .banner-text-puls-button:nth-of-type(1):hover {
+  transform: scale(1.1, 1.1);
+  background-color: gold;
+  color: black;
+  transition: all 0.5s;
+}
+header .banner-text-puls-button:nth-of-type(2):hover {
+  transform: scale(1.1, 1.1);
+  background-color: black;
+  color: white;
+  transition: all 0.5s;
+}
+
+@media screen and (min-width: 600px) {
+  header nav .menu {
+    flex-direction: row;
+  }
+  header .banner {
+    background-image: none;
+    background-color: gray;
+    display: flex;
+  }
+  header .banner-text {
+    width: 50%;
+  }
+  header .banner-text-subtitle {
+    color: black;
+  }
+  header .banner-img {
+    display: block;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  header nav {
+    padding: 10px 50px;
+  }
+  header nav .menu {
+    gap: 15px;
+  }
+  header .banner-text {
+    width: 60%;
+  }
+  header .banner-text-title {
+    padding: 10px;
+    font-size: 70px;
+    color: white;
+  }
+  header .banner-text-subtitle {
+    padding: 10px;
+    font-size: 40px;
+  }
+  header .banner-text-description {
+    font-size: 10px;
+    padding: 20px;
+  }
+  header .banner-text-puls-button {
+    padding: 10px 15px;
+    font-size: 20px;
+  }
+  header .banner-img {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header nav {
+    padding: 10px 100px;
+  }
+  header nav .menu {
+    font-size: 25px;
+    gap: 20px;
+  }
+  header .banner-text {
+    width: 65%;
+  }
+  header .banner-text-puls-button {
+    padding: 10px 15px;
+    font-size: 25px;
+  }
+  header .banner-img {
+    width: 35%;
+  }
+}
+@media screen and (min-width: 1820px) {
+  header .banner-text {
+    width: 70%;
+  }
+  header .banner-text-title {
+    padding: 20px;
+    font-size: 80px;
+    color: white;
+  }
+  header .banner-text-subtitle {
+    padding: 20px;
+    font-size: 40px;
+  }
+  header .banner-text-description {
+    font-size: 30px;
+    padding: 20px;
+  }
+  header .banner-text-puls-button {
+    padding: 15px 25px;
+    font-size: 25px;
+  }
+  header .banner-img {
+    width: 30%;
+  }
+}/*# sourceMappingURL=style.css.map */
