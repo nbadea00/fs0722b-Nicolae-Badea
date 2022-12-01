@@ -1,0 +1,23 @@
+@mixin quadratti($colore) {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    background-color: $colore;
+    box-shadow: 1px 1px 5px $colore;
+}
+
+@mixin mobible(){
+    @media (max-width: 576px){
+        @content;
+    }
+}
+@mixin tablet(){
+    @media (max-width: 768px){
+        @content;
+    }
+}
+@mixin portatileL(){
+    @media (max-width: 1200px){
+        @content;
+    }
+}

@@ -1,0 +1,76 @@
+main {
+    grid-area: main;
+    padding: $padding*10 $padding*10;
+
+    border: 1px solid #000;
+
+    font-family: $ff-roboto;
+
+    section {
+        * {
+            margin: $padding*3;
+        }
+
+        h1,
+        h2 {
+            font-size: $fs-size*2;
+            font-family: $ff-spectral;
+        }
+
+        button {
+            @extend %button;
+        }
+
+        .sec-text {
+            line-height: $fs-size*1.2;
+            padding-left: $padding*5 ;
+        }
+    }
+
+    form {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        margin: $space*10 auto 0 auto;
+
+        width: 300px;
+
+        gap: $space*4;
+
+        input {
+            padding: $padding*2 $padding*4;
+            border: none;
+            border-bottom: 2px solid $main-color;
+
+            &:hover {
+                box-shadow: 0px 0px 10px $main-color;
+            }
+        }
+
+        button {
+            @extend %button;
+        }
+    }
+
+    .colori {
+        @extend %display;
+        align-items: center;
+        @include mobible{
+            flex-direction: column;
+            gap: $space*4;
+        }
+
+        @for $i from 1 through 3 {
+            div:nth-of-type(#{$i}n) {
+                $col : red, blue, green;
+                @include quadratti(nth($col, $i));
+            }
+        }
+
+        div:hover {
+            transform: scale(1.2, 1.2) rotate(45grad);
+            transition: all 0.5s ease-in;
+        }
+    }
+}

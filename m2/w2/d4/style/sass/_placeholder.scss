@@ -1,0 +1,18 @@
+%display{
+    display: flex;
+    justify-content: space-between;
+}
+%button{
+    padding: $padding*2 $padding*4;
+            font-size: $fs-size*1.2;
+
+            background-color: $main-color;
+            border: none;
+
+            &:hover{
+                background-color: yellow;
+                transform: scale(1.2,1.2);
+                box-shadow: 1px 1px 10px gold;
+                transition: all 0.2s linear;
+            }
+}

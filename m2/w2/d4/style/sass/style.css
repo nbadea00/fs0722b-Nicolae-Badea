@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Spectral&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+/*Font*/
+/*Testo*/
+/*Color*/
+main .colori, header {
+  display: flex;
+  justify-content: space-between;
+}
+
+main form button, main section button {
+  padding: 10px 20px;
+  font-size: 19.2px;
+  background-color: aquamarine;
+  border: none;
+}
+main form button:hover, main section button:hover {
+  background-color: yellow;
+  transform: scale(1.2, 1.2);
+  box-shadow: 1px 1px 10px gold;
+  transition: all 0.2s linear;
+}
+
+header {
+  padding: 15px 50px;
+  font-size: 24px;
+  grid-area: header;
+  background-color: aquamarine;
+}
+@media (max-width: 768px) {
+  header {
+    justify-content: center;
+    font-size: 16px;
+  }
+}
+header .logo-img {
+  width: 150px;
+}
+@media (max-width: 768px) {
+  header .logo-img {
+    display: none;
+  }
+}
+header .menu {
+  display: flex;
+  gap: 25px;
+}
+@media (max-width: 576px) {
+  header .menu {
+    align-items: center;
+    gap: 15px;
+  }
+}
+header .menu-elements:hover {
+  text-decoration: underline;
+}
+
+main {
+  grid-area: main;
+  padding: 50px 50px;
+  border: 1px solid #000;
+  font-family: "Roboto", sans-serif;
+}
+main section * {
+  margin: 15px;
+}
+main section h1,
+main section h2 {
+  font-size: 32px;
+  font-family: "Spectral", serif;
+}
+main section .sec-text {
+  line-height: 19.2px;
+  padding-left: 25px;
+}
+main form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto 0 auto;
+  width: 300px;
+  gap: 20px;
+}
+main form input {
+  padding: 10px 20px;
+  border: none;
+  border-bottom: 2px solid aquamarine;
+}
+main form input:hover {
+  box-shadow: 0px 0px 10px aquamarine;
+}
+main .colori {
+  align-items: center;
+}
+@media (max-width: 576px) {
+  main .colori {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+main .colori div:nth-of-type(1n) {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  background-color: red;
+  box-shadow: 1px 1px 5px red;
+}
+main .colori div:nth-of-type(2n) {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  background-color: blue;
+  box-shadow: 1px 1px 5px blue;
+}
+main .colori div:nth-of-type(3n) {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  background-color: green;
+  box-shadow: 1px 1px 5px green;
+}
+main .colori div:hover {
+  transform: scale(1.2, 1.2) rotate(45grad);
+  transition: all 0.5s ease-in;
+}
+
+aside {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  grid-area: aside;
+  background-color: aquamarine;
+  padding: 20px 0px;
+}
+@media (max-width: 1200px) {
+  aside {
+    height: auto;
+  }
+}
+aside .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (max-width: 1200px) {
+  aside .menu {
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+aside .menu-elements {
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 10px 20px;
+  border-bottom: 2px dotted white;
+  text-align: center;
+}
+aside .menu-elements a {
+  font-size: 19.2px;
+}
+aside .menu-elements a:hover {
+  text-decoration: underline;
+}
+aside .menu-elements:nth-of-type(1) {
+  top: 10%;
+}
+aside .menu-elements:nth-of-type(2) {
+  top: 20%;
+}
+aside .menu-elements:nth-of-type(3) {
+  top: 30%;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: aquamarine;
+}
+footer p {
+  padding: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu {
+  list-style: none;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 30% 30% 30% 10%;
+  grid-template-rows: auto 50% 50% auto;
+  grid-template-areas: "header header header header" "main main main aside" "main main main aside" "footer footer footer footer";
+}
+@media (max-width: 1200px) {
+  body {
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header header header header" "aside aside aside aside" "main main main main" "footer footer footer footer";
+  }
+}/*# sourceMappingURL=style.css.map */

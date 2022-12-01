@@ -1,0 +1,36 @@
+header{
+    @extend %display;
+    padding: $padding*3 $padding*10;
+
+    font-size: $fs-size*1.5;
+    @include tablet{
+        justify-content: center;
+        font-size: $fs-size*1;
+    }
+    
+
+    grid-area: header;
+
+    background-color: $main-color;
+
+    .logo{
+        &-img{
+            width: 150px;
+            @include tablet{
+                display: none;
+            }
+        }
+    }
+    .menu{
+        display: flex;
+        gap: $space*5;
+        @include mobible{
+            align-items: center;
+            gap: $space*3;
+        }
+
+        &-elements:hover{
+            text-decoration: $ts;
+        }
+    }
+}

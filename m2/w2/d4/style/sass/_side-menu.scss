@@ -1,0 +1,56 @@
+aside{
+    height: 100%;
+    @include portatileL{
+        height: auto;
+    }
+
+    display: flex;
+    justify-content: center;
+
+    grid-area: aside;
+
+    background-color: $main-color;
+
+    padding: $padding*4 0px;
+
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        gap: $space*8;
+        @include portatileL{
+            justify-content: center;
+            flex-direction: row;
+        }
+
+
+        &-elements{
+            position: sticky;
+
+            padding: $padding*2 $padding*4;
+
+            border-bottom: 2px dotted white;
+            text-align: center;
+            
+
+            a{
+                font-size: $fs-size*1.2;
+
+                &:hover{
+                    text-decoration: $ts;
+                }
+            }
+        }
+
+        &-elements:nth-of-type(1){
+            top:posizione(1);
+        }
+        &-elements:nth-of-type(2){
+            top:posizione(2);
+        }
+        &-elements:nth-of-type(3){
+            top:posizione(3);
+        }
+
+    }
+}
