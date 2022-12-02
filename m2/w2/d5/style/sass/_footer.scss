@@ -1,0 +1,18 @@
+#footer {
+    background-image: $bg-color;
+    padding-top: $default-padding*2;
+
+    h2 {
+        font-family: $ff-outfit;
+    }
+
+    color: $text-color-white;
+
+    @include ds-md {
+        padding-top: $default-padding*4;
+    }
+
+    @include ds-lg {
+        padding-top: $default-padding*6;
+    }
+}

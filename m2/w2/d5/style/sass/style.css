@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:wght@300;400&display=swap"); /*Font da google font*/
+/*Font*/
+/*Text*/
+/*bg-color*/
+/*Space*/
+/*Oggetto rapporti*/
+/*Variabili*/
+.nav-contenitore div .menu-elements a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Placeholder per i link*/
+/*mixin per le mediaquery*/
+.nav {
+  padding: 5px 10px;
+  background-image: linear-gradient(0deg, rgb(95, 27, 232) 10%, rgb(102, 37, 233) 37%, rgb(113, 53, 235) 90%);
+}
+.nav-contenitore-titolo {
+  color: white;
+}
+@media (min-width: 992px) {
+  .nav-contenitore-titolo {
+    font-size: 32px;
+  }
+}
+@media (min-width: 992px) {
+  .nav-contenitore div {
+    justify-content: end;
+  }
+}
+@media (min-width: 992px) {
+  .nav-contenitore div .menu {
+    gap: 20px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 576px) {
+  .nav-contenitore div .menu {
+    text-align: center;
+  }
+}
+.nav-contenitore div .menu-elements a {
+  color: orangered;
+}
+@media (min-width: 992px) {
+  .nav-contenitore div .menu-elements a {
+    font-size: 19.2px;
+  }
+}
+.nav-contenitore div .menu-elements:first-of-type a {
+  color: white;
+}
+@media (min-width: 992px) {
+  .nav-contenitore div .menu-elements:last-of-type {
+    gap: 20px;
+  }
+}
+
+.main {
+  padding: 0px;
+}
+.main .banner {
+  background-image: url("../../assets/img/pexels-aleksandar-pasaric-325185.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 10px;
+}
+@media (min-width: 992px) {
+  .main .banner {
+    height: 500px;
+    padding: 20px 60px;
+  }
+}
+.main-titolo {
+  font-size: 24px;
+  font-family: "Outfit", sans-serif;
+}
+@media (min-width: 768px) {
+  .main-titolo {
+    font-size: 36px;
+  }
+}
+@media (min-width: 992px) {
+  .main-titolo {
+    font-size: 72px;
+  }
+}
+.main-paragrafo {
+  color: black;
+}
+@media (min-width: 768px) {
+  .main-paragrafo {
+    font-size: 17.6px;
+  }
+}
+@media (min-width: 992px) {
+  .main-paragrafo {
+    font-size: 24px;
+  }
+}
+.main .box-pulsante {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .main .box-pulsante {
+    text-align: justify;
+  }
+}
+.main .box-pulsante-pulsante {
+  background-color: #5d18e8;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+.main .box-pulsante-pulsante:hover {
+  background-color: #44e818;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+.main .main-blocchi {
+  background-color: #f6f5f6;
+  padding: 20px 10px;
+}
+.main .main-blocchi-icona {
+  font-size: 32px;
+}
+@media (min-width: 992px) {
+  .main .main-blocchi-icona {
+    font-size: 38.4px;
+  }
+}
+.main .main-blocchi-titolo {
+  font-size: 20.8px;
+}
+@media (min-width: 992px) {
+  .main .main-blocchi-titolo {
+    font-size: 24.96px;
+  }
+}
+
+aside #partnerships .partnerships-titolo {
+  font-size: 48px;
+  font-family: "Outfit", sans-serif;
+}
+aside #partnerships .box-img {
+  padding: 10px 50px;
+}
+@media (min-width: 1400px) {
+  aside #partnerships .box-img {
+    padding: 10px 100px;
+  }
+}
+
+#opinioni {
+  overflow: hidden;
+  padding: 40px 5px;
+}
+@media (min-width: 1200px) {
+  #opinioni {
+    padding: 80px 5px;
+  }
+}
+#opinioni h2 {
+  font-size: 31.2px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  #opinioni h2 {
+    font-size: 62.4px;
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  #opinioni .commento {
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: 24px;
+    padding-bottom: 60px;
+  }
+}
+#opinioni .slid {
+  display: flex;
+  position: relative;
+  left: 0%;
+  transition: all 1s ease-in-out;
+}
+#opinioni .slid img {
+  width: 100px;
+  border-radius: 50%;
+}
+#opinioni .slid-1 {
+  text-align: center;
+  min-width: 100%;
+}
+#opinioni .slid-2 {
+  text-align: center;
+  min-width: 100%;
+}
+#opinioni .slid-3 {
+  text-align: center;
+  min-width: 100%;
+}
+
+#footer {
+  background-image: linear-gradient(0deg, rgb(95, 27, 232) 10%, rgb(102, 37, 233) 37%, rgb(113, 53, 235) 90%);
+  padding-top: 10px;
+  color: white;
+}
+#footer h2 {
+  font-family: "Outfit", sans-serif;
+}
+@media (min-width: 768px) {
+  #footer {
+    padding-top: 20px;
+  }
+}
+@media (min-width: 992px) {
+  #footer {
+    padding-top: 30px;
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}/*# sourceMappingURL=style.css.map */

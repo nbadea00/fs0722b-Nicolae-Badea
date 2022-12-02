@@ -1,0 +1,53 @@
+.nav {
+    padding: $default-padding $default-padding*2;
+    background-image: $bg-color;
+
+    &-contenitore {
+
+        &-titolo {
+            color: $text-color-white;
+
+            @include ds-lg {
+                font-size: $fs-size*map.get($rapporti, "menu");
+            }
+        }
+
+        div {
+            @include ds-lg {
+                justify-content: end;
+            }
+
+            .menu {
+                @include ds-lg {
+                    gap: $default-gap*map.get($rapporti, "gap-menu");
+                    font-size: $fs-size*map.get($rapporti, "paragraph");
+                }
+
+                @include ds-sm {
+                    text-align: $text-centrato;
+                }
+
+                &-elements a {
+                    @extend %link-stile;
+
+                    color: $text-color-orange;
+
+                    @include ds-lg {
+                        font-size: $fs-size*map.get($rapporti, "paragraph")*1.2;
+                    }
+
+                }
+
+                &-elements:first-of-type a {
+                    color: $text-color-white;
+                }
+
+                &-elements:last-of-type {
+                    @include ds-lg {
+                        gap: $default-gap*map.get($rapporti, "gap-menu");
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@use "sass:map";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:wght@300;400&display=swap');/*Font da google font*/
+
+@import "var";/*Variabili*/
+@import"placeholder";/*Placeholder per i link*/
+@import"mixin";/*mixin per le mediaquery*/
+@import "navbar";
+@import "main";
+@import "aside";
+@import "slider";
+@import "footer";
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $ff-roboto;
+}

@@ -1,0 +1,49 @@
+#opinioni {
+    overflow: hidden;
+
+    padding: $default-padding*map.get($rapporti, 'y')*8 $default-padding;
+
+    @include ds-xl {
+        padding: $default-padding*map.get($rapporti, 'y')*16 $default-padding;
+    }
+
+    h2 {
+        font-size: $fs-size*map.get($rapporti, 'subTitle')*1.5;
+        padding-bottom: $default-padding*map.get($rapporti, 'y')*4;
+
+        @include ds-xl {
+            font-size: $fs-size*map.get($rapporti, 'subTitle')*3;
+            padding-bottom: $default-padding*map.get($rapporti, 'y')*12;
+        }
+
+        text-align: $text-centrato;
+    }
+
+    .commento {
+        @include ds-xl {
+            max-width: 80%;
+            margin: 0 auto;
+            font-size: $fs-size*map.get($rapporti, 'paragraph')*1.5;
+            padding-bottom: $default-padding*map.get($rapporti, 'y')*12;
+        }
+    }
+
+    .slid {
+        display: flex;
+        position: relative;
+        left: 0%;
+        transition: all 1s ease-in-out;
+
+        img {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        @for $i from 0 to 3 {
+            &-#{$i+1} {
+                text-align: $text-centrato;
+                min-width: 100%;
+            }
+        }
+    }
+}

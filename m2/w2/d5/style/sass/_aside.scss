@@ -1,0 +1,17 @@
+aside {
+    #partnerships {
+
+        .partnerships-titolo {
+            font-size: $fs-size*map.get($rapporti, 'title')*2;
+            font-family: $ff-outfit;
+        }
+
+        .box-img {
+            padding: $default-padding*2 $default-padding*map.get($rapporti, 'x')*5;
+
+            @include ds-xxl {
+                padding: $default-padding*2 $default-padding*map.get($rapporti, 'x')*10;
+            }
+        }
+    }
+}

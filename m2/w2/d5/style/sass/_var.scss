@@ -1,0 +1,25 @@
+/*Font*/
+$ff-outfit: 'Outfit', sans-serif;
+$ff-roboto: 'Roboto', sans-serif;
+$fs-size: 16px;
+
+/*Text*/
+$text-color-white: white;
+$text-color-black: black;
+$text-color-gray: gray;
+$text-color-orange: orangered;
+$text-centrato : center;
+
+/*bg-color*/
+$bg-color: linear-gradient(0deg, rgba(95, 27, 232, 1) 10%, rgba(102, 37, 233, 1) 37%, rgba(113, 53, 235, 1) 90%);
+$bg-bth-color: #5d18e8;
+$bg-bth-color-hover: #44e818;
+$bg-color-g: #f6f5f6;
+
+/*Space*/
+$default-padding: 5px;
+$default-margin: 5px;
+$default-gap: 2px;
+
+/*Oggetto rapporti*/
+$rapporti : ('title': 1.5, 'subTitle': 1.3, 'paragraph': 1, 'menu':2, 'icon': 2, 'y': 1, 'x': 2, 'img':1, 'gap-menu': 10);

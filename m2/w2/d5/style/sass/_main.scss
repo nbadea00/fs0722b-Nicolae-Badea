@@ -1,0 +1,85 @@
+.main {
+    padding: 0px;
+
+    .banner {
+        background-image: url("../../assets/img/pexels-aleksandar-pasaric-325185.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: $default-padding*map.get($rapporti, 'y')*4 $default-padding*map.get($rapporti, 'x');
+
+        @include ds-lg {
+            height: 500px;
+            padding: $default-padding*map.get($rapporti, 'y')*4 $default-padding*map.get($rapporti, 'x')*6;
+        }
+    }
+
+    &-titolo {
+        font-size: $fs-size*map.get($rapporti, "title");
+        font-family: $ff-outfit;
+
+        @include ds-md {
+            font-size: $fs-size*map.get($rapporti, "title")*1.5;
+        }
+
+        @include ds-lg {
+            font-size: $fs-size*map.get($rapporti, "title")*3;
+        }
+    }
+
+    &-paragrafo {
+        color: black;
+
+        @include ds-md {
+            font-size: $fs-size*map.get($rapporti, "paragraph")*1.1;
+        }
+
+        @include ds-lg {
+            font-size: $fs-size*map.get($rapporti, "paragraph")*1.5;
+        }
+    }
+
+    .box-pulsante {
+        text-align: center;
+
+        @include ds-lg {
+            text-align: justify;
+        }
+
+        &-pulsante {
+            background-color: $bg-bth-color;
+            color: $text-color-white;
+            padding: $default-padding*2 $default-padding*4;
+            border: none;
+
+            &:hover {
+                background-color: $bg-bth-color-hover;
+                color: $text-color-black;
+                transition: all 0.2s ease-in-out;
+                ;
+            }
+        }
+    }
+
+    .main-blocchi {
+        background-color: $bg-color-g;
+        padding: $default-padding*map.get($rapporti, 'y')*4 $default-padding*map.get($rapporti, 'x');
+
+        &-icona {
+            font-size: $fs-size*map.get($rapporti, 'icon');
+
+            @include ds-lg {
+                font-size: $fs-size*map.get($rapporti, 'icon')*1.2;
+            }
+
+        }
+
+        &-titolo {
+            font-size: $fs-size*map.get($rapporti, 'subTitle');
+
+            @include ds-lg {
+                font-size: $fs-size*map.get($rapporti, 'subTitle')*1.2;
+            }
+        }
+    }
+}
