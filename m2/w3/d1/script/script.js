@@ -8,7 +8,7 @@
 
         this.eta = function () {//metodo calcolo del eta
             let currentDay = new Date();
-            return parseInt((currentDay.getTime() - this.dataNascita.getTime() ) / (86400000 * 365));
+            return Math.floor((currentDay.getTime() - this.dataNascita.getTime() ) / (86400000 * 365));
         };
 
         this.tableAdd = function () {// metodo per aggungere alla tabella
