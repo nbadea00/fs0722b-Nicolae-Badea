@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatore</title>
+</head>
+
+<body>
+    <p id="messaggio"></p>
+
+    <script>
+        {
+
+            let startPoint = Number(sessionStorage.timer);
+
+            if (!startPoint) {
+                startPoint = 0;
+            }
+
+            function cont() {
+                startPoint += 1;
+                sessionStorage.timer = startPoint;
+                let p = document.querySelector('#messaggio');
+                p.textContent = `Sono passati ${sessionStorage.timer}s dal apertura di questa tab.`
+            }
+            setInterval(cont, 1000);
+        }
+    </script>
+</body>
+
+</html>
