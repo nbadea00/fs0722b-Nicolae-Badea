@@ -1,0 +1,33 @@
+.card{
+    padding: $default-padding*2;
+
+    div{
+        text-align: center;
+        border: 1px solid $border-color;
+        border-radius: $default-border-radius;
+        padding: $default-padding*6;
+
+        background-color: $bg-card;
+
+        &:hover{
+            transform: scale(1.1,1.1);
+            box-shadow: 3px 3px 5px $border-color;
+            transition: all 0.5s ease-in-out;
+        }
+
+        *{
+            padding: $default-padding*2 $default-padding*0;
+        }
+
+        .img{
+            @extend %img;
+        }
+
+        p{
+            color: $text-color;
+            a{
+                @extend %link;
+            }
+        }
+    }
+}

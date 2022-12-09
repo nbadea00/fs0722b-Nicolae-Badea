@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"); /*Font*/
+/*Space*/
+/*Border*/
+/*Bg color*/
+/*Dimension*/
+/*Text color*/
+#extend-card .extend-card img, .card div .img {
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+#extend-card .extend-card p a, .card div p a {
+  color: #f1bb15;
+  text-decoration: none;
+  font-family: inherit;
+}
+#extend-card .extend-card p a:hover, .card div p a:hover {
+  text-decoration: underline;
+}
+
+#error-alert {
+  text-align: center;
+  font-size: 50px;
+}
+
+#user-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+.card {
+  padding: 10px;
+}
+.card div {
+  text-align: center;
+  border: 1px solid #ccd0d4;
+  border-radius: 5%;
+  padding: 30px;
+  background-color: white;
+}
+.card div:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 3px 3px 5px #ccd0d4;
+  transition: all 0.5s ease-in-out;
+}
+.card div * {
+  padding: 10px 0px;
+}
+.card div p {
+  color: #323330;
+}
+#extend-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#extend-card .extend-card {
+  background-color: white;
+  width: 50%;
+  border-radius: 10px;
+  color: #323330;
+  position: fixed;
+  z-index: 10;
+  padding: 30px;
+}
+#extend-card .extend-card * {
+  padding: 10px 0px;
+}
+#extend-card .extend-card div {
+  display: flex;
+  gap: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  background-color: #f1f1f1;
+}
+
+.bg {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: none;
+}/*# sourceMappingURL=style.css.map */

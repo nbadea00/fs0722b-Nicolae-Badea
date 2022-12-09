@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import 'var';
+@import 'placeholder';
+@import 'error-message';
+@import 'user-list';
+@import 'card';
+@import 'extend-card';
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $ff-roboto;
+    height: 100vh;
+    background-color: $bg-color;
+}
+
+.bg{
+    background-color: rgba(#000000, 0.2);
+    height: 100vh;
+    width: $default-width*2;
+    position: fixed;
+    top:0;
+    z-index: 1;
+    display: none;
+}

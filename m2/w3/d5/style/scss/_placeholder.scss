@@ -1,0 +1,15 @@
+%img {
+    background-color: $bg-img-color;
+    border-radius: $default-border-radius*10;
+    padding: $default-padding*2;
+}
+
+%link {
+    color: $link-color;
+    text-decoration: none;
+    font-family: inherit;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

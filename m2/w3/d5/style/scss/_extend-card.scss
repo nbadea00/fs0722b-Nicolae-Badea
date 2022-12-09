@@ -1,0 +1,35 @@
+#extend-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .extend-card{
+        background-color: $bg-card;
+        width: $default-width;
+        border-radius: 10px;
+        color: $text-color;
+
+        position: fixed;
+        z-index: 10;
+
+        *{
+            padding: $default-padding*2 $default-padding*0;
+        }
+
+        img{
+            @extend %img;
+        }
+
+        p{
+            a{
+                @extend %link;
+            }
+        }
+
+        div{
+            display: flex;
+            gap: $default-space*6;
+        }
+        padding: $default-padding*6;
+    }
+}
