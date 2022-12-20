@@ -58,8 +58,8 @@ var Account = /** @class */ (function () {
 }());
 var MotherAccount = /** @class */ (function (_super) {
     __extends(MotherAccount, _super);
-    function MotherAccount(accountUsername, accountEmail, accountPassword, balancInit, date, interest) {
-        return _super.call(this, accountUsername, accountEmail, accountPassword, balancInit, date, interest) || this;
+    function MotherAccount() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
     MotherAccount.prototype.addInterest = function () {
         return this.balancInit + this.balancInit * this.interest / 100;

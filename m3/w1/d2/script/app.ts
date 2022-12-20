@@ -69,9 +69,6 @@ abstract class Account {
 }
 
 class MotherAccount extends Account {
-    constructor(accountUsername:string, accountEmail:string, accountPassword:string, balancInit:number,date:string, interest:number){
-        super(accountUsername, accountEmail, accountPassword, balancInit, date, interest);
-    }
 
     addInterest(){
         return this.balancInit + this.balancInit * this.interest / 100
