@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        section{
+            max-width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <input type="text" placeholder="Inserire il proprio reddito" id="redd">
+        <input type="text" placeholder="Inserire percentuale tasse inps" id="tax">
+        <div>
+            <h2>Selezionare categoria</h2>
+            <button class="artigiano">Artigiano</button>
+            <button class="freelancer">Freelancer</button>
+            <button class="imprenditore">Imprenditore</button>
+        </div>
+        <h2>Risultato</h2>
+        <div id="risultati">
+        </div>
+    </section>
+        
+
+    <script src="./script/app.js"></script>
+    </body>
+    </html>
