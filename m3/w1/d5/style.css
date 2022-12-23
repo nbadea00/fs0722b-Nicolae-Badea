@@ -1,0 +1,65 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+#contenitore{
+    margin: 0;
+    background-image: url('smartphone.png');
+    background-position: cover;
+    background-repeat: no-repeat;
+    width: 259px;
+    height: 523px;
+}
+#schermo{
+    margin: 0;
+    position: relative;
+    width: 220px; 
+    height:390px;
+    background-image: url('sfondo.jpeg');
+    top:65px;
+    left:20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    
+}
+#pin{
+    background: rgba(232, 126, 188, 0.605);
+    border:none;
+    border-bottom: 1px solid black;
+
+    
+}
+#pin:focus{
+    outline: none;
+}
+input{
+    width: 100px;
+    background: rgba(220, 220, 220, 0.6);
+
+    
+}
+#schermo > div > div > button{
+    border:none;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+{
+   -webkit-appearance: none;
+   margin: 0;
+}

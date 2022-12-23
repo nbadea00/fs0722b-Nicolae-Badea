@@ -1,0 +1,37 @@
+{
+   "utenti":[
+    {
+        "id": 0,
+        "name": "Marco",
+        "credito": 20,
+        "chiamate":2,
+        "bg": "https://i.pinimg.com/564x/cf/5a/3c/cf5a3c1a1852cfb98618feef3d18d1c7.jpg",
+        "user":1,
+        "pin": 1234
+        
+
+    },
+    {
+        "id": 1,
+        "name": "Giulia",
+        "credito": 30,
+        "chiamate":4,
+        "bg": "https://thumbs.dreamstime.com/z/sfondo-o-colorato-di-colore-pastello-sfumato-con-colori-sfumati-illustrazione-vettoriale-211024891.jpg",
+        "user":2,
+        "pin": 4567
+        
+
+    },
+    {
+        "id": 2,
+        "name": "Maria",
+        "credito": 50,
+        "chiamate":3,
+        "bg": "https://i.pinimg.com/564x/b2/b8/3c/b2b83cf229077c4750270663555f9620.jpg",
+        "user":3,
+        "pin": 6666
+        
+
+    }
+   ] 
+}
