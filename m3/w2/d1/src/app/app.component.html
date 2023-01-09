@@ -1,0 +1,18 @@
+<header>
+  <app-nav-bar-component></app-nav-bar-component>
+</header>
+
+<main>
+  <app-banner-component></app-banner-component>
+
+  <section class="container-fluid">
+    <h2>Offerte del giorno</h2>
+    <div class="row">
+      <app-card-component class="col-12 col-md-6 col-xl-4 d-flex justify-content-center" *ngFor="let i of range"></app-card-component>
+    </div>
+    </section>
+</main>
+
+<footer>
+  <app-footer-component></app-footer-component>
+</footer>

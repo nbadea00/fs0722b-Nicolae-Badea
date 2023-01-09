@@ -1,0 +1,18 @@
+nav{
+  img{
+    width: 50px;
+    aspect-ratio: 1;
+    padding: 0px;
+  }
+
+  ul{
+    height: 0px;
+    overflow: hidden;
+
+    transition: height 0.5s linear;
+
+    @media (min-width: 768px) {
+      height: auto;
+    }
+  }
+}
