@@ -1,0 +1,16 @@
+<div class="cont" *ngFor="let post of posts">
+  <div class="card"
+  [ngClass]="{
+    'bg-dark text-white': post.type == 'news',
+    'bg-info': post.type == 'education',
+    'bg-warning': post.type == 'politics'
+  }">
+    <div class="card-header">Post</div>
+    <div class="card-body">
+      <h5 class="card-title">{{ post.title }}</h5>
+      <p class="card-text">{{ post.body }}</p>
+      <button class="btn btn-primary"(click)=" postSrv.updatePost(post.id)" *ngIf="post.active">Disattiva</button>
+      <button class="btn btn-primary" (click)=" postSrv.updatePost(post.id)"*ngIf="!post.active">Attiva</button>
+    </div>
+  </div>
+</div>
