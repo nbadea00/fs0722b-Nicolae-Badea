@@ -1,0 +1,3 @@
+<app-posts [post]="post" *ngFor="let post of posts" [param] = "true">
+  <button class="btn btn-primary"(click)=" postServ.updatePost(post.id)">Disattiva</button>
+</app-posts>

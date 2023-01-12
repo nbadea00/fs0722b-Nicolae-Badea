@@ -1,0 +1,15 @@
+<div class="cont" *ngIf="post.active == param">
+  <div class="card"
+  [ngClass]="{
+    'bg-dark text-white': post.type == 'news',
+    'bg-info': post.type == 'education',
+    'bg-warning': post.type == 'politics'
+  }">
+    <div class="card-header"><span appEvidenzia>Post</span></div>
+    <div class="card-body">
+      <h5 class="card-title">{{ post.title }}</h5>
+      <p class="card-text">{{ post.body }}</p>
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>
